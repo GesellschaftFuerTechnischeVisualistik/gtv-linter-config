@@ -1,7 +1,7 @@
 # Using the GTV ESLint configurations
 
-1. Run `npm i @gtv/eslint-config --save-dev` to install the GTV ESLint configuration. Take note of the messages about missing peer dependencies.
-2. Update or install any missing peer dependencies noted in the previous step, which may be any of: `npm i eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-jsdoc --save-dev`. If you are unsure what peer dependencies are required, run `npm view @gtv/eslint-config peerDependencies`
+1. Run `npm i @gesellschaftfuertechnischevisualistik/eslint-config --save-dev` to install the GTV ESLint configuration. Take note of the messages about missing peer dependencies.
+2. Update or install any missing peer dependencies noted in the previous step, which may be any of: `npm i eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-jsdoc --save-dev`. If you are unsure what peer dependencies are required, run `npm view @gesellschaftfuertechnischevisualistik/eslint-config peerDependencies`
 3. Add a file named `.eslintrc.js` in the project root, setting up ESLint the use of the GTV ESLint configurations. Here's an example file for a project that uses TypeScript, ECMAScript 6 (2015) idioms and modules, as well as jQuery, and jsdoc for documentation:
     ```
     module.exports = {
@@ -18,8 +18,8 @@
         'ecmaVersion': 6
     },
     extends: [
-        '@gtv/eslint-config/eslint-config-ts',
-        '@gtv/eslint-config/eslint-config-jsdoc'
+        '@gesellschaftfuertechnischevisualistik/eslint-config/eslint-config-ts',
+        '@gesellschaftfuertechnischevisualistik/eslint-config/eslint-config-jsdoc'
     ]
     };
     ```
