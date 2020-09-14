@@ -1,5 +1,5 @@
 {
-  "name": "@intern_qs/eslint-config",
+  "name": "@gtv/eslint-config",
   "version": "1.0.1",
   "description": "ESLint configurations for various project types developed by Gesellschaft für Technische Visualistik",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://code.visualistik.de/intern_qs/coding_guidelines.git"
+    "url": "https://github.com/GesellschaftFuerTechnischeVisualistik/gtv-linter-config.git"
   },
   "keywords": [
     "eslint",
     "eslintconfig"
   ],
   "author": "Gesellschaft für Technische Visualistik mbH",
-  "license": "UNLICENSED",
+  "license": "MIT Licence",
   "peerDependencies": {
     "eslint": ">=7",
     "eslint-plugin-jsdoc": ">=30",
@@ -23,6 +23,6 @@
     "@typescript-eslint/parser": ">=3"
   },
   "publishConfig": {
-    "@intern_qs:registry": "https://code.visualistik.de/api/v4/projects/152/packages/npm/"
+    "registry": "https://npm.pkg.github.com/"
   }
 }
