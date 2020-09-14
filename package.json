@@ -1,6 +1,6 @@
 {
-  "name": "@GesellschaftFuerTechnischeVisualistik/eslint-config",
-  "version": "1.0.1",
+  "name": "@gtvmbh/eslint-config",
+  "version": "1.0.2",
   "description": "ESLint configurations for various project types developed by Gesellschaft für Technische Visualistik",
   "main": "index.js",
   "scripts": {
