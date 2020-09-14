@@ -26,8 +26,7 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: npm init --scope=@gtvmbh
-      - run: npm publish --access public
+      - run: npm publish --@gtvmbh:registry=https://registry.npmjs.org/ --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
 
