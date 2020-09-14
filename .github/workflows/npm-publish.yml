@@ -25,8 +25,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-          registry-url: https://registry.npmjs.org/
-      - run: npm publish --@gtvmbh:registry=https://registry.npmjs.org/ --access public
+          registry-url: https://registry.npmjs.org
+          scope: 'gtvmbh'
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
 
@@ -38,6 +39,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+          scope: 'gesellschaftfuetechnischevisualistik'
           registry-url: https://npm.pkg.github.com/
       - run: npm publish
         env:
