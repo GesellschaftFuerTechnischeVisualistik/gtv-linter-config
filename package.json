@@ -15,7 +15,7 @@
     "eslintconfig"
   ],
   "author": "Gesellschaft für Technische Visualistik mbH",
-  "license": "MIT Licence",
+  "license": "MIT",
   "peerDependencies": {
     "eslint": ">=7",
     "eslint-plugin-jsdoc": ">=30",
