@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
     'eslint:recommended',
-    '@intern_qs/eslint-config/eslint-config-jsdoc'
+    '@gtvmbh/eslint-config/eslint-config-jsdoc'
   ],
   rules: {
     'no-extra-parens': ['warn', 'all', { 'nestedBinaryExpressions': false }],

@@ -15,7 +15,7 @@
     parserOptions: {
         'sourceType': 'module',
         'project': './tsconfig.json',
-        'ecmaVersion': 6
+        'ecmaVersion': 2020
     },
     extends: [
         '@gtvmbh/eslint-config/eslint-config-ts',
