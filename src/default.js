@@ -220,7 +220,7 @@ module.exports = {
     'no-restricted-exports': 'off',
     'no-restricted-imports': 'off',
     'no-useless-computed-key': 'error',
-    'no-useless-constructor': 'error',
+    'no-useless-constructor': 'warn',
     'no-useless-rename': 'error',
     'no-var': 'error',
     'prefer-arrow-callback': 'warn',
