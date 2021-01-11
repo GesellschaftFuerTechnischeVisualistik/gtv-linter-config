@@ -19,7 +19,7 @@ module.exports = {
     'default-param-last': 'error',
     'dot-location': ['error', 'property'],
     'dot-notation': 'off',
-    'eqeqeq': 'error',
+    'eqeqeq': ['error', 'always', {'null': true}],
     'grouped-accessor-pairs': 'warn',
     'guard-for-in': 'off',
     'max-classes-per-file': 'off',
@@ -28,7 +28,7 @@ module.exports = {
     'no-constructor-return': 'error',
     'no-div-regex': 'off',
     'no-else-return': 'off',
-    'no-empty-function': 'error',
+    'no-empty-function': 'off',
     'no-eq-null': 'off',
     'no-eval': 'error',
     'no-extend-native': 'off',
@@ -63,6 +63,7 @@ module.exports = {
     'no-throw-literal': 'error',
     'no-unmodified-loop-condition': 'warn',
     'no-unused-expressions': 'warn',
+    'no-unused-vars': 'warn',
     'no-useless-call': 'warn',
     'no-useless-concat': 'error',
     'no-useless-return': 'error',
@@ -131,7 +132,7 @@ module.exports = {
       'max': 300, 'skipComments': true
     }],
     'max-lines-per-function': ['warn', {
-      'max': 50
+      'max': 80
     }],
     'max-nested-callbacks': ['warn', 3],
     'max-params': ['warn', 5],
@@ -140,7 +141,7 @@ module.exports = {
       'max': 1
     }],
     'multiline-comment-style': 'off',
-    'multiline-ternary': ['error', 'never'],
+    'multiline-ternary': ['error', 'always-multiline'],
     'new-cap': 'error',
     'new-parens': 'error',
     'newline-per-chained-call': ['error', {
@@ -167,7 +168,7 @@ module.exports = {
     'no-whitespace-before-property': 'error',
     'nonblock-statement-body-position': 'off',
     'object-curly-newline': ['error', {
-      'multiline': true
+      'consistent': true
     }],
     'object-curly-spacing': ['error', 'always'],
     'object-property-newline': ['error', {
@@ -185,7 +186,7 @@ module.exports = {
     }],
     'prefer-exponentiation-operator': 'off',
     'prefer-object-spread': 'off',
-    'quote-props': ['error', 'consistent-as-needed'],
+    'quote-props': ['warn', 'consistent-as-needed'],
     'quotes': ['error', 'single', {
       'allowTemplateLiterals': true
     }],
