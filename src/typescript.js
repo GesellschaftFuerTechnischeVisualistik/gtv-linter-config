@@ -322,7 +322,7 @@ module.exports = {
     
     // Disallow unnecessary constructors
     'no-useless-constructor': 'off',
-    '@typescript-eslint/no-useless-constructor': 'error',
+    '@typescript-eslint/no-useless-constructor': 'warn',
     
     // Enforce the consistent use of either backticks, double, or single quotes
     'quotes': 'off',
