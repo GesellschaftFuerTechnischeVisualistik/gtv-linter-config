@@ -19,7 +19,7 @@ module.exports = {
     'default-param-last': 'error',
     'dot-location': ['error', 'property'],
     'dot-notation': 'off',
-    'eqeqeq': ['error', 'always', {'null': true}],
+    'eqeqeq': ['error', 'always', {'null': 'ignore'}],
     'grouped-accessor-pairs': 'warn',
     'guard-for-in': 'off',
     'max-classes-per-file': 'off',
