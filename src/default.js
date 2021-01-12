@@ -85,7 +85,7 @@ module.exports = {
     'no-restricted-globals': 'off',
     'no-shadow': 'error',
     'no-undef-init': 'error',
-    'no-undefined': 'warn',
+    'no-undefined': 'off',
     'no-use-before-define': 'warn',
     'array-bracket-newline': ['error', {
       'multiline': true
