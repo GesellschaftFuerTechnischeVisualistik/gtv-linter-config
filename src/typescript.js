@@ -132,7 +132,7 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
     
     // Prevents conditionals where the type is always truthy or always falsy
-    '@typescript-eslint/no-unnecessary-condition': 'warn',
+    '@typescript-eslint/no-unnecessary-condition': ['warn', { 'allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing': true }],
     
     // Warns when a namespace qualifier is unnecessary
     '@typescript-eslint/no-unnecessary-qualifier': 'warn',
@@ -204,7 +204,7 @@ module.exports = {
     '@typescript-eslint/promise-function-async': 'error',
     
     // Requires Array#sort calls to always provide a compareFunction
-    '@typescript-eslint/require-array-sort-compare': 'warn',
+    '@typescript-eslint/require-array-sort-compare': ['warn', { 'ignoreStringArrays': true }],
     
     // When adding two variables, operands must both be of type number or of type string
     '@typescript-eslint/restrict-plus-operands': 'error',
@@ -228,7 +228,7 @@ module.exports = {
     '@typescript-eslint/typedef': 'off', // compiler noImplicitAny
     
     // Enforces unbound methods are called with their expected scope
-    '@typescript-eslint/unbound-method': ['error', {'ignoreStatic':true}],
+    '@typescript-eslint/unbound-method': ['warn', {'ignoreStatic': true}],
     
     // Warns for any two overloads that could be unified into one by using a union or an optional/rest parameter
     '@typescript-eslint/unified-signatures': 'warn',
@@ -290,7 +290,7 @@ module.exports = {
     
     // Disallow empty functions
     'no-empty-function': 'off',
-    '@typescript-eslint/no-empty-function': 'error',
+    '@typescript-eslint/no-empty-function': 'off',
     
     // Disallow unnecessary parentheses
     'no-extra-parens': 'off',
@@ -310,7 +310,7 @@ module.exports = {
     
     // Disallow unused expressions
     'no-unused-expressions': 'off',
-    '@typescript-eslint/no-unused-expressions': 'warn',
+    '@typescript-eslint/no-unused-expressions': ['error', { 'allowTernary': true }],
     
     // Disallow unused variables
     'no-unused-vars': 'off',
