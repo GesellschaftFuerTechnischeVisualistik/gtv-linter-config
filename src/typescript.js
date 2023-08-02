@@ -156,7 +156,7 @@ module.exports = {
     '@typescript-eslint/no-unsafe-return': 'warn',
     
     // Disallow unused variables and arguments
-    '@typescript-eslint/no-unused-vars-experimental': 'warn', // aber lieber über compiler (siehe beschreibung)?,
+    '@typescript-eslint/no-unused-vars': 'warn', // aber lieber über compiler (siehe beschreibung)?,
     
     // Disallows the use of require statements except in import statements
     '@typescript-eslint/no-var-requires': 'error',

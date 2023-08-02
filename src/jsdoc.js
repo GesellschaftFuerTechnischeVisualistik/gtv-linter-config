@@ -3,6 +3,5 @@ module.exports = {
     'jsdoc'
   ],
   rules: {
-    'jsdoc/newline-after-description': 'warn'
   }
 };
