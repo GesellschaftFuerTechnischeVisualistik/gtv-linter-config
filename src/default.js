@@ -1,7 +1,6 @@
 module.exports = {
   extends: [
     'eslint:recommended',
-    '@gtvmbh/eslint-config/eslint-config-jsdoc'
   ],
   rules: {
     'no-extra-parens': ['warn', 'all', { 'nestedBinaryExpressions': false }],
@@ -55,7 +54,7 @@ module.exports = {
     'no-param-reassign': 'error',
     'no-proto': 'error',
     'no-restricted-properties': 'off',
-    'no-return-assign': ['error', 'always'],
+    'no-return-assign': ['error', 'except-parens'],
     'no-return-await': 'warn',
     'no-script-url': 'error',
     'no-self-compare': 'error',
@@ -114,7 +113,7 @@ module.exports = {
     'id-blacklist': 'off',
     'id-length': 'off',
     'id-match': 'off',
-    'implicit-arrow-linebreak': 'off',
+    'implicit-arrow-linebreak': ["error", "beside"],
     'indent': ["error", 2, { "SwitchCase": 1 }],
     'jsx-quotes': ['error', 'prefer-double'],
     'key-spacing': ['error', {
@@ -129,10 +128,10 @@ module.exports = {
     'max-depth': 'off',
     'max-len': 'off',
     'max-lines': ['warn', {
-      'max': 300, 'skipComments': true
+      'max': 400, 'skipComments': true
     }],
     'max-lines-per-function': ['warn', {
-      'max': 80
+      'max': 100
     }],
     'max-nested-callbacks': ['warn', 3],
     'max-params': ['warn', 5],
