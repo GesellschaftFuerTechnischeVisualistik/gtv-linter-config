@@ -9,6 +9,9 @@ module.exports = {
     '@gtvmbh/eslint-config'
   ],
   rules: {
+
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': 'error',
     
     // Require that member overloads be consecutive
     '@typescript-eslint/adjacent-overload-signatures': 'error',
@@ -48,7 +51,7 @@ module.exports = {
     '@typescript-eslint/member-delimiter-style': 'error',
     
     // Require a consistent member declaration order
-    '@typescript-eslint/member-ordering': 'error',
+    '@typescript-eslint/member-ordering': 'warn',
     
     // Enforces using a particular method signature syntax.
     '@typescript-eslint/method-signature-style': 'warn', //anscheinend ist 'property' besser, weesschne,
@@ -132,7 +135,7 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
     
     // Prevents conditionals where the type is always truthy or always falsy
-    '@typescript-eslint/no-unnecessary-condition': ['warn', { 'allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing': true }],
+    '@typescript-eslint/no-unnecessary-condition': 'off',
     
     // Warns when a namespace qualifier is unnecessary
     '@typescript-eslint/no-unnecessary-qualifier': 'warn',
@@ -154,9 +157,6 @@ module.exports = {
     
     // Disallows returning any from a function
     '@typescript-eslint/no-unsafe-return': 'warn',
-    
-    // Disallow unused variables and arguments
-    '@typescript-eslint/no-unused-vars-experimental': 'warn', // aber lieber über compiler (siehe beschreibung)?,
     
     // Disallows the use of require statements except in import statements
     '@typescript-eslint/no-var-requires': 'error',
@@ -201,7 +201,7 @@ module.exports = {
     '@typescript-eslint/prefer-ts-expect-error': 'off', // cool aber TS >= 3.9,
     
     // Requires any function or method that returns a Promise to be marked async
-    '@typescript-eslint/promise-function-async': 'error',
+    '@typescript-eslint/promise-function-async': ['error', { checkArrowFunctions: false, checkFunctionExpressions: false }],
     
     // Requires Array#sort calls to always provide a compareFunction
     '@typescript-eslint/require-array-sort-compare': ['warn', { 'ignoreStringArrays': true }],
@@ -310,11 +310,11 @@ module.exports = {
     
     // Disallow unused expressions
     'no-unused-expressions': 'off',
-    '@typescript-eslint/no-unused-expressions': ['error', { 'allowTernary': true }],
+    '@typescript-eslint/no-unused-expressions': ['error', { allowShortCircuit: true, allowTernary: true }],
     
     // Disallow unused variables
     'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': 'warn',
+    '@typescript-eslint/no-unused-vars': 'error',
     
     // Disallow the use of variables before they are defined
     'no-use-before-define': 'off',

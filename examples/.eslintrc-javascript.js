@@ -8,8 +8,7 @@ module.exports = {
     'jasmine': true
   },
   extends: [
-    '@gtvmbh/eslint-config
-    '@gtvmbh/eslint-config/eslint-config-jsdoc'
+    '@gtvmbh/eslint-config'
   ],
   ignorePatterns: [
     '.eslintrc.js'
