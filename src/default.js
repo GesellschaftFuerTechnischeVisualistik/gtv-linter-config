@@ -113,7 +113,7 @@ module.exports = {
     'id-blacklist': 'off',
     'id-length': 'off',
     'id-match': 'off',
-    'implicit-arrow-linebreak': ["error", "beside"],
+    'implicit-arrow-linebreak': "off",
     'indent': ["error", 2, { "SwitchCase": 1 }],
     'jsx-quotes': ['error', 'prefer-double'],
     'key-spacing': ['error', {

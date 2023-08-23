@@ -1,6 +1,11 @@
 module.exports = {
   rules: {
-    'no-restricted-imports': ['error', { 'patterns': ['ViDaLa/*'], 'caseSensitive': true }],
+    'no-restricted-imports': ['error', {
+      'patterns': [{
+        "group": ['ViDaLa/*'],
+        "caseSensitive": true
+      }]
+    }],
     '@typescript-eslint/unbound-method': 'off',
     'prefer-named-capture-group': 'off',
   }
