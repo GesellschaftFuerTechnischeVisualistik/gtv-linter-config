@@ -293,8 +293,8 @@ module.exports = {
     '@typescript-eslint/no-empty-function': 'off',
     
     // Disallow unnecessary parentheses
-    'no-extra-parens': 'off',
-    '@typescript-eslint/no-extra-parens': ['warn', 'all', { 'nestedBinaryExpressions': false }],
+    "no-extra-parens": "off",
+    "@typescript-eslint/no-extra-parens": ["warn", "all", { "conditionalAssign": false , "returnAssign": false, "nestedBinaryExpressions": false }],
     
     // Disallow unnecessary semicolons
     'no-extra-semi': 'off',
