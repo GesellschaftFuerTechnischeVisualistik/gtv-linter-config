@@ -57,7 +57,8 @@ module.exports = {
     '@typescript-eslint/method-signature-style': 'warn', //anscheinend ist 'property' besser, weesschne,
 
     // Enforces naming conventions for everything across a codebase
-    '@typescript-eslint/naming-convention': ['error', [{
+
+    '@typescript-eslint/naming-convention': ['error', {
       selector: 'default',
       format: ['camelCase', 'UPPER_CASE'],
       leadingUnderscore: 'forbid',
@@ -72,7 +73,7 @@ module.exports = {
     {
       selector: 'typeLike',
       format: ['PascalCase'],
-    }]],
+    }],
 
     // Requires that .toString() is only called on objects which provide useful information when stringified
     '@typescript-eslint/no-base-to-string': 'warn',
