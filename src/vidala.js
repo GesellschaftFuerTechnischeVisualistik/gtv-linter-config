@@ -8,5 +8,6 @@ module.exports = {
     }],
     '@typescript-eslint/unbound-method': 'off',
     'prefer-named-capture-group': 'off',
+    '@typescript/default-param-last': 'warn'
   }
 };

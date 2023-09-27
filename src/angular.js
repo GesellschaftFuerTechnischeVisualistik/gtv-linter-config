@@ -10,7 +10,7 @@ module.exports = {
       { 
         'capIsNewExceptions': [
           // exceptions for angular decorators (@Component, @Input etc), array may be extended if needed.
-          'Component', 'NgModule', 'ViewChild', 'Injectable', 'Input', 'Output', 'HostListener' 
+          'Component', 'NgModule', 'ViewChild', 'Injectable', 'Input', 'Output', 'HostListener', 'Pipe', 'Inject', 'Directive', 'HostBinding'
         ]
       }
     ]
