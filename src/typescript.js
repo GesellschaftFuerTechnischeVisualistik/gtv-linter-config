@@ -223,7 +223,17 @@ module.exports = {
     '@typescript-eslint/restrict-template-expressions': 'off', // (oder warn mit allen options an),
 
     // Restricts the types allowed in boolean expressions
-    '@typescript-eslint/strict-boolean-expressions': 'warn',
+    '@typescript-eslint/strict-boolean-expressions': ['warn', {
+      allowString: true,
+      allowNumber: true,
+      allowNullableObject: true,
+      allowNullableBoolean: false,
+      allowNullableString: false,
+      allowNullableNumber: false,
+      allowNullableEnum: false,
+      allowAny: false,
+      allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing: false,
+    }],
 
     // Exhaustiveness checking in switch with union type
     '@typescript-eslint/switch-exhaustiveness-check': 'error',
